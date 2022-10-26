@@ -104,7 +104,7 @@
                                 <div class="flex items-center justify-center gap-10">
                                     <label
                                         class="todo-container flex flex-row-reverse items-center justify-center gap-4">
-                                        <input type="checkbox" value=" <%= todos[i] %> " name="check" class="taskCheckbox">
+                                        <input type="checkbox" value=<%= todos[i] %> name="check" class="taskCheckbox">
                                         <p>
                                             <%= todos[i] %>
 
@@ -112,7 +112,7 @@
                                         <span class="checkmark flex items-center justify-center"></span>
                                     </label>
                                 </div>
-                                <form action="/removetask" method="post" value="<%= todos[i] %>">
+                                <form action="/removetask" method="post" name="button" value=<%= todos[i] %>>
                                     <button type="submit" class="todos-added-span hover:text-black">
                                         <i class="fa-solid fa-trash"></i>
                                     </button>
